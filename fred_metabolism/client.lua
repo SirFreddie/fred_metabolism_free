@@ -219,7 +219,45 @@ AddEventHandler("fred:medicine", function(source)
 	--local outerHealth = 5
 	local innerHealthGold = 0.0
 	local outerHealthGold = 100.0
-    TaskItemInteraction(PlayerPedId(), nil, GetHashKey("EAT_MULTI_BITE_FOOD_SPHERE_D8-2_SANDWICH_QUICK_LEFT_HAND"), true, 0, 0)
+
+	TaskItemInteraction(PlayerPedId(), nil, GetHashKey("EAT_MULTI_BITE_FOOD_SPHERE_D8-2_SANDWICH_QUICK_LEFT_HAND"), true, 0, 0)
         Citizen.Wait(1000)
 			TriggerEvent('fred:consume', hunger, thirst, innerStamina, innerStaminaGold, outerStaminaGold, innerHealth, innerHealthGold, outerHealthGold)
+
 end)
+
+--Medicine with bottle animation ON DEVELOPMENT
+--[[RegisterNetEvent("fred:medicine")
+AddEventHandler("fred:medicine", function(source)
+    local _source = source
+
+	local hunger = 0
+	local thirst = 10
+	local innerStamina = 0
+	local innerStaminaGold = 0.0
+	local outerStaminaGold = 0.0
+	local innerHealth = 0
+	--local outerHealth = 5
+	local innerHealthGold = 0.0
+	local outerHealthGold = 100.0
+
+    local status = false
+
+    if status == false then
+    	local playerPed = PlayerPedId()
+        local propEntity = CreateObject(GetHashKey('p_bottlemedicine09x'), GetEntityCoords(PlayerPedId()), false, false, 1, 1, 0)
+        TaskItemInteraction_2(PlayerPedId(), 1737033966, propEntity, GetHashKey("p_bottleJD01x_ph_r_hand"), GetHashKey("DRINK_BOTTLE@Bottle_Cylinder_D1-3_H30-5_Neck_A13_B2-5_UNCORK"), true, 0, 0)
+        status = true
+        Citizen.Wait(10000)
+        DeleteEntity(propEntity)
+        for i=1, 10 do
+            
+              TriggerEvent('fred:consume', hunger, thirst, innerStamina, innerStaminaGold, outerStaminaGold, innerHealth, innerHealthGold, outerHealthGold)
+                        
+        end
+    elseif status == true then
+        TriggerEvent("vorp:TipBottom", "You're already drinking a Medicine", 4000)
+    end
+    status = false
+
+end)]]--
