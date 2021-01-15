@@ -156,14 +156,14 @@ RegisterNetEvent("fred:peach")
 AddEventHandler("fred:peach", function(source)
 	local _source = source
 	local hunger = 35
-	local thirst = 0
+	local thirst = 5
 	local innerStamina = 0
-	local innerStaminaGold = 100.0
-	local outerStaminaGold = 100.0
+	local innerStaminaGold = 0.0
+	local outerStaminaGold = 0.0
 	local innerHealth = 0
 	--local outerHealth = 5
-	local innerHealthGold = 100.0
-	local outerHealthGold = 100.0
+	local innerHealthGold = 0.0
+	local outerHealthGold = 0.0
     TaskItemInteraction(PlayerPedId(), nil, GetHashKey("EAT_MULTI_BITE_FOOD_SPHERE_D8-2_SANDWICH_QUICK_LEFT_HAND"), true, 0, 0)
         Citizen.Wait(1000)
 			TriggerEvent('fred:consume', hunger, thirst, innerStamina, innerStaminaGold, outerStaminaGold, innerHealth, innerHealthGold, outerHealthGold)
