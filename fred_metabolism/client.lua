@@ -155,6 +155,7 @@ end
 RegisterNetEvent("fred:peach")
 AddEventHandler("fred:peach", function(source)
 	local _source = source
+	-- CORE VALUES --
 	local hunger = 35
 	local thirst = 5
 	local innerStamina = 0
