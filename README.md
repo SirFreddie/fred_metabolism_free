@@ -5,5 +5,5 @@
 
 # TODO: 
 
-- Add animations. 
-- Config.lua file for easy configuration.
+- [ ] Add animations. 
+- [x] Config.lua file for easy configuration.
