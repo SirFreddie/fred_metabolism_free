@@ -19,4 +19,5 @@
 
 - [X] Add animation for consuming. 
 - [x] Config.lua file for easy configuration.
-- [ ] Add more animations.
+- [ ] Add more animations depending if it is drinking or eating.
+- [ ] Metabolism system to get fatter or skinnier.
