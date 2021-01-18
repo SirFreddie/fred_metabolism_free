@@ -50,7 +50,6 @@ Config.ItemsToUse = {
         ["InnerCoreStaminaGold"] = 0.0, -- Inner Core Stamina Gold overpower
         ["OuterCoreStaminaGold"] = 0.0, -- Outer Core Stamina Gold overpower
         ["InnerCoreHealth"] = 0, -- Inner Core Health effect
-        --["OuterCoreHealth"] = 0,
         ["InnerCoreHealthGold"] = 0.0, -- Inner Core Health Gold overpower
         ["OuterCoreHealthGold"] = 100.0, -- Outer Core Health Gold overpower
 
@@ -65,7 +64,6 @@ Config.ItemsToUse = {
         ["InnerCoreStaminaGold"] = 0.0,
         ["OuterCoreStaminaGold"] = 100.0,
         ["InnerCoreHealth"] = 0,
-        --["OuterCoreHealth"] = 0,
         ["InnerCoreHealthGold"] = 0.0,
         ["OuterCoreHealthGold"] = 0.0,
 
@@ -84,7 +82,6 @@ Config.ItemsToUse = {
         ["InnerCoreStaminaGold"] = 0.0,
         ["OuterCoreStaminaGold"] = 100.0,
         ["InnerCoreHealth"] = 0,
-        --["OuterCoreHealth"] = 0,
         ["InnerCoreHealthGold"] = 0.0,
         ["OuterCoreHealthGold"] = 0.0,
 
@@ -103,7 +100,6 @@ Config.ItemsToUse = {
         ["InnerCoreStaminaGold"] = 0.0,
         ["OuterCoreStaminaGold"] = 100.0,
         ["InnerCoreHealth"] = 0,
-        --["OuterCoreHealth"] = 0,
         ["InnerCoreHealthGold"] = 100.0,
         ["OuterCoreHealthGold"] = 0.0,
 

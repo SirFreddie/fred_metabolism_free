@@ -19,6 +19,7 @@
 
 - [X] Add animation for consuming. 
 - [X] Config.lua file for easy configuration.
+- [ ] Add Outer Core Health normal effect.
 - [ ] Add more animations depending if it is drinking or eating.
 - [ ] Metabolism system to get fatter or skinnier.
 
@@ -26,4 +27,5 @@
 
 ```
 18/01/21 - Corrected some notification issues and name display not showing up correctly.
+         - Removed Outer Core Health comments on config.lua
 ```
