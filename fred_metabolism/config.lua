@@ -1,5 +1,7 @@
 Config = {
 
+["MSG"] = "Has consumido ", -- Message to display when consumed
+
 -- INITIAL VALUES
 ["InitialFood"] = 100, -- INITIAL FOOD -- MAX VALUE 100%
 ["InitialWater"] = 100, -- INITIAL FOOD -- MAX VALUE 100%
