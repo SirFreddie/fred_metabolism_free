@@ -10,7 +10,7 @@
 
 - Easy way to configure your consumables.
 - Weather effect on metabolism depending if it is cold or hot. 
-- Multiple core effects and Gold ovverpowers.
+- Multiple core effects and Gold overpowers.
 - Example of consumables on the Config file.
 - Many configs to play with.
 
