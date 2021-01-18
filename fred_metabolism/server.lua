@@ -24,7 +24,7 @@ Citizen.CreateThread(function()
 
             TriggerClientEvent("fred:useItem", data.source, index)
             VorpInv.subItem(data.source, Config.ItemsToUse[index]["Name"], 1)
-            TriggerClientEvent("vorp:TipRight", data.source, Config["MSG"]..Config.ItemsToUse[index]["Name"], 5000)
+            TriggerClientEvent("vorp:TipRight", data.source, Config["MSG"]..Config.ItemsToUse[index]["DisplayName"], 5000)
             print(index)
         end)
     end
