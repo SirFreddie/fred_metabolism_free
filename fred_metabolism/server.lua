@@ -9,43 +9,23 @@ VorpInv = exports.vorp_inventory:vorp_inventoryApi()
 
 ---------------------
 --
---REGISTER USABLES--
+--REGISTER USABLES--   
 --
 ---------------------
 
---FOOD
 
-VorpInv.RegisterUsableItem("consumable_peach", function(data)
+Citizen.CreateThread(function()    
+    for i = 1, #Config.ItemsToUse do
+        
+        local index = i
 
-  VorpInv.subItem(data.source, "consumable_peach", 1)
-  TriggerClientEvent("vorp:TipRight", data.source, "Has comido un melocoton", 5000)
-  TriggerClientEvent("fred:peach", data.source)
+        VorpInv.RegisterUsableItem(Config.ItemsToUse[i]["Name"], function(data)
+
+
+            TriggerClientEvent("fred:useItem", data.source, index)
+            VorpInv.subItem(data.source, Config.ItemsToUse[index]["Name"], 1)
+            TriggerClientEvent("vorp:TipRight", data.source, "Has Consumido "..Config.ItemsToUse[index]["Name"], 5000)
+            print(index)
+        end)
+    end
 end)
-
-
-VorpInv.RegisterUsableItem("consumable_meat_greavy", function(data)
-
-    VorpInv.subItem(data.source, "consumable_meat_greavy", 1)
-    TriggerClientEvent("vorp:TipRight", data.source, "Has comido carne cocinada", 5000)
-    TriggerClientEvent("fred:cookedMeat", data.source)
-end)
-
---DRINKS
-
-VorpInv.RegisterUsableItem("consumable_coffee", function(data)
-
-    VorpInv.subItem(data.source, "consumable_coffee", 1)
-    TriggerClientEvent("vorp:TipRight", data.source, "Has bebido cafe", 5000)
-    TriggerClientEvent("fred:coffee", data.source)
-end)
-
---MEDICINES
-
-VorpInv.RegisterUsableItem("consumable_medicine", function(data)
-
-    VorpInv.subItem(data.source, "consumable_medicine", 1)
-    TriggerClientEvent("vorp:TipRight", data.source, "Has consumido medicina", 5000)
-    TriggerClientEvent("fred:medicine", data.source)
-end)
-
-
