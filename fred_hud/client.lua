@@ -35,6 +35,7 @@ money = 0
 
 Citizen.CreateThread(function()
     while true do
+        Citizen.Wait(0)
         local _source = source 
 		--TriggerServerEvent("hud:checkmoney")
         Citizen.InvokeNative(0x50C803A4CD5932C5 , true)
@@ -54,7 +55,7 @@ Citizen.CreateThread(function()
                 --stress = mystress,
                 --cash = money,
                 --temp = math.floor(temp * 1.8 + 32.0).."°",
-				temp= math.floor(temp).."°C",
+				temp = math.floor(temp).."°C",
 		})
         Citizen.Wait(1000)
     end
