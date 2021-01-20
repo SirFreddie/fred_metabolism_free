@@ -91,6 +91,8 @@ AddEventHandler("fred:useItem", function(index)
 		water = 100
 	end
 
+	TaskItemInteraction(PlayerPedId(), nil, GetHashKey("EAT_MULTI_BITE_FOOD_SPHERE_D8-2_SANDWICH_QUICK_LEFT_HAND"), true, 0, 0)
+	
 	if (Config.ItemsToUse[index]["InnerCoreStamina"] ~= 0) then
 		stamina = Citizen.InvokeNative(0x36731AC041289BB1, PlayerPedId(), 1) --ACTUAL STAMINA CORE GETTER
 		newStamina = stamina + tonumber(Config.ItemsToUse[index]["InnerCoreStamina"])
