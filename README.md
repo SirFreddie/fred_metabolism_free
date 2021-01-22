@@ -19,7 +19,7 @@
 
 Use 
 ```
-TriggerEvent("fred:consume", hunger, thirst, metabolism, innercorestamina, innercorestaminagold, outercorestaminagold, innercorehealth, innercorehealthgold, outercorehealthgold)
+TriggerEvent("fred:consume", hunger, thirst, innercorestamina, innercorestaminagold, outercorestaminagold, innercorehealth, innercorehealthgold, outercorehealthgold)
 ```
 This will work on any other resource, it is useful if you want to make a specific change on any value.
 
