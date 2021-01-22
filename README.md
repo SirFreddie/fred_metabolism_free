@@ -15,6 +15,13 @@
 - Example of consumables on the Config file.
 - Many configs to play with.
 
+# Event
+
+Use 
+```
+TriggerEvent("fred:consume", hunger, thirst, metabolism, innercorestamina, innercorestaminagold, outercorestaminagold, innercorehealth, innercorehealthgold, outercorehealthgold)
+```
+This will work on any other resource, it is useful if you want to make a specific change on any value.
 
 # TODO: 
 
@@ -29,4 +36,8 @@
 ```
 18/01/21 - Corrected some notification issues and name display not showing up correctly.
          - Removed Outer Core Health comments on config.lua
+```
+
+```
+22/01/21 - Added event "fred:consume". You can use this in any other script to change the metabolism values. Read the section Event.
 ```
