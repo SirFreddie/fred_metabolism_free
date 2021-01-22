@@ -135,7 +135,7 @@ end)
 
 -- EVENT, USE THIS FOR OTHER RESOURCES
 RegisterNetEvent("fred:consume")
-AddEventHandler("fred:consume", function(hunger,thirst, innercorestamina, innercorestaminagold, outercorestaminagold, innercorehealth, innercorehealthgold, outercorehealthgold)
+AddEventHandler("fred:consume", function(hunger, thirst, innercorestamina, innercorestaminagold, outercorestaminagold, innercorehealth, innercorehealthgold, outercorehealthgold)
 	local ped = PlayerPedId()
 	local coords = GetEntityCoords(ped)
 	food = food + tonumber(hunger)
