@@ -6,6 +6,9 @@
  
  SUPER IMPORTANT: IF YOU HAVE ANY CONSUMABLE ALREADY REGISTERED YOU WILL HAVE TO DETELE IT SINCE THIS SCRIPT REGISTER THOSE AUTOMATICALLY, THAT MAY CAUSE ISSUES WITH THE SCRIPT.
 
+ I WILL NOT SUPPORT THIS SCRIPT ANYMORE, YOU CAN CHECK THE FULL VERSION ON THIS DISCORD!
+ (https://discord.gg/rdpZH9vcPX)
+
  **Hope it helps!**
 
 # Content
@@ -28,9 +31,6 @@ This will work on any other resource, it is useful if you want to make a specifi
 
 - [X] Add animation for consuming. 
 - [X] Config.lua file for easy configuration.
-- [ ] Add Outer Core Health normal effect.
-- [ ] Add more animations depending if it is drinking or eating.
-- [ ] Metabolism system to get fatter or skinnier.
 
 ## CHANGELOG:
 
